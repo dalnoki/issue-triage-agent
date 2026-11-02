@@ -1,0 +1,1100 @@
+[
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/2126",
+    "title": "Improve cpu_count by os.sched_getaffinity",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/2306",
+    "title": "Jira Server Integration Problem",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/2307",
+    "title": "Wrong webhook url validation",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/2570",
+    "title": "sentry and slack integration error",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 2,
+    "transfer_path": "[\"getsentry/self-hosted\", \"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/self-hosted",
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/2933",
+    "title": "change password error (api status code 500) in 21.5.1 using admin pannel",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/2934",
+    "title": "SSL error during \"sentry cleanup\"",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/2962",
+    "title": "Use `min` prefix for minified file extensions",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3008",
+    "title": "No/low disk space warning.",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3136",
+    "title": "uwsgi procname not working",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3287",
+    "title": "Debug files being deleted if SENTRY_EVENT_RETENTION_DAYS is lower than 30 days",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3353",
+    "title": "After upgrading our sentry to 24.9.0 we are facing sentry.auth.system: Trying to use `SystemToken` from non-internal IP",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3372",
+    "title": "After creating a redmine issue, the button should link to the issue, not the integration page",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3413",
+    "title": "Performance: All Events tab on issue with many events loads indefinitely",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3441",
+    "title": "Self Hosted: Issue symbolication doesn't work on iOS",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 2,
+    "transfer_path": "[\"getsentry/sentry-cocoa\", \"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry-cocoa",
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3444",
+    "title": "Memory leaks in post-process-forwarder-transactions",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 2,
+    "transfer_path": "[\"getsentry/self-hosted\", \"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/self-hosted",
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3452",
+    "title": "self-hosted insights/backend/databas  page you are looking for was not found",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3468",
+    "title": "Bookmark on projects doesn't work well",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3469",
+    "title": "AWS Lambda Problem - cannot connect",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3474",
+    "title": "SAML2 with Keycloak - User cannot login",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3481",
+    "title": "Docs are using deprecated settings",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3504",
+    "title": "Missing support for source maps with micro frontends",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3572",
+    "title": "[BUG] - COMPOSE_PROFILES=errors-only Doesn't Prevent Full Service Startup",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3576",
+    "title": "Inconsistent email subject formatting",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3691",
+    "title": "Kafka consumes 100% disk space causing the whole setup to crash",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3726",
+    "title": "error loading a component in mobile insights",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3737",
+    "title": "The configuration 'SENTRY_ALLOW_ORIGIN' does not take effect in the 'sentry.conf.py' file",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 2,
+    "transfer_path": "[\"getsentry/self-hosted\", \"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/self-hosted",
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3799",
+    "title": "Performace insights is stopped working",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3819",
+    "title": "I tried to build a Docker image, but I encountered an error.",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3832",
+    "title": "Health Check Endpoint Doesn't Verify Third-Party Dependencies (Redis, Kafka, ClickHouse, etc.)",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3835",
+    "title": "How can I clear session replay?",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 2,
+    "transfer_path": "[\"getsentry/self-hosted\", \"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/self-hosted",
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3856",
+    "title": "When setting up Sentry on k8s, I keep getting prompted 403",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3857",
+    "title": "Redis version in Sentry self hosted 25.7.0",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3902",
+    "title": "Replays not visible due to Storage GET error: NoSuchKey",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3904",
+    "title": "Two docker containers (generic-metrics-consumer-1 and metrics-consumer-1) in restart loop (with errors)",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3913",
+    "title": "RabbitMQ node not running",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3920",
+    "title": "Facing issue while selfhosted sentry integration with okta.",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3921",
+    "title": "Delayed slack notification",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3929",
+    "title": "my self-hosted sentry web clock on this page\uff01",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3963",
+    "title": "Replay Not Found in Self hosted sentry",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/3977",
+    "title": "No errors ingested while projects are being deleted",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4013",
+    "title": "arroyo.errors.OffsetOutOfRange: KafkaError{code=_AUTO_OFFSET_RESET,val=-140,str=\"fetch failed due to requested offset not available on the broker: Broker: Offset out of range (broker 1001)\"}",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4057",
+    "title": "Welkome to Sentry",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4080",
+    "title": "690MB documentation webpage in every snuba container",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4082",
+    "title": "Server-side data scrubbing replaces Java object identifiers with [email]",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4084",
+    "title": "Default Redis setting causes Out of Memory crashes",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4124",
+    "title": "when I click the Trace: Trace ID, the website thrown the error \"You don't have access to this feature\"",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4131",
+    "title": "Relay container fails to fetch project state and auth health check fails in Sentry 25.11.0 self-hosted",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4175",
+    "title": "Reopen: Alerting system stops triggering after short uptime",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4211",
+    "title": "Separate host for each redis database needed",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4226",
+    "title": "Two alerts were configured under the same iueese, but only one hook was triggered.",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4241",
+    "title": "taskworker / taskworker-scheduler do not respect signals",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4248",
+    "title": "Alert rule for \"New Issue Created\" is not triggered immediately.",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4252",
+    "title": "process-spans-1 cannot start",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4262",
+    "title": "Backend Insights crashes and does not render fully on OpenTelemetry project",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4271",
+    "title": "Taskworker leaking memory",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4276",
+    "title": "No new sentry events",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4277",
+    "title": "We are unable to view  session replays some short session we are able to see",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4317",
+    "title": "Failed to produce message to Kafka",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4325",
+    "title": "View Similar Spans broken: span group hash mismatch between Relay and Python _calculate_span_grouping",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4327",
+    "title": "Upgrade to 26.4.2 hanging on Retrying failed request: /?lifecycle",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4373",
+    "title": "DB row lock contention in `organizationonboardingtask` on cache miss",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4377",
+    "title": "Feature organizations:am3-tier is not registered with sentry.features.default_manager",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4378",
+    "title": "devserver: granian reload watcher enters infinite loop when .artifacts/dev.log is written",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4379",
+    "title": "devserver: granian reload watcher enters infinite loop when .artifacts/dev.log is written",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4392",
+    "title": "Taskworker KAFKA_TOPIC_OVERRIDES Ignored",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4393",
+    "title": "Upgrade to hard stop 25.5.1 impossible : \"0878_backfill_open_periods\" migration fails",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4404",
+    "title": "404 when adding a new GH repository",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4405",
+    "title": "AADSTS900144: The request body must contain the following parameter: 'client_id'.",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4433",
+    "title": "Self-hosted Sentry: ingestion pipeline (relay \u2194 web) silently fails after ~18\u201324h uptime, recurring, no clear root cause found after extensive investigation",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4474",
+    "title": "/api/client-config/ endpoint spam of requests after update",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4502",
+    "title": "sentry import global silently drops all but one ProjectKey per project",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4508",
+    "title": "bin/react-to-product-owners-yml-changes.py cannot run: .github/labels.yml was deleted in #109140",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4511",
+    "title": "Migration Hard Stops inforcement",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4518",
+    "title": "send-beacon crashes in get_all_package_versions: dictionary changed size during iteration",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4527",
+    "title": "Debug event level is rendered with red fallback color in issue lists",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/self-hosted/issues/4557",
+    "title": "Snuba seems to set timestamp_ms to a max value",
+    "stored_destination": "getsentry/self-hosted",
+    "first_destination_repo": "getsentry/self-hosted",
+    "final_repo": "getsentry/self-hosted",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/self-hosted\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/self-hosted"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/sentry-dotnet/issues/4554",
+    "title": "Support `Sentry.SourceGenerators` via Visual Studio 2019 version 16.11",
+    "stored_destination": "getsentry/sentry-dotnet",
+    "first_destination_repo": "getsentry/sentry-dotnet",
+    "final_repo": "getsentry/sentry-dotnet",
+    "hop_count": 1,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/sentry-dotnet\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/sentry-dotnet"
+    ]
+  },
+  {
+    "issue_url": "https://github.com/getsentry/sentry-java/issues/3015",
+    "title": "Add OS security patch level to app context",
+    "stored_destination": "getsentry/sentry-java",
+    "first_destination_repo": "getsentry/sentry-react-native",
+    "final_repo": "getsentry/sentry-java",
+    "hop_count": 2,
+    "transfer_path": "[\"getsentry/sentry\", \"getsentry/sentry-react-native\", \"getsentry/sentry-java\"]",
+    "incomplete": false,
+    "path": [
+      "getsentry/sentry",
+      "getsentry/sentry-react-native",
+      "getsentry/sentry-java"
+    ]
+  }
+]

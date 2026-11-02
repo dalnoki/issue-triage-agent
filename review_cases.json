@@ -1,0 +1,44 @@
+{
+  "cases": [
+    {
+      "name": "Replay team and role access",
+      "issue_number": 127205,
+      "url": "https://github.com/getsentry/sentry/issues/127205",
+      "status": "disputed",
+      "human_suggestion": "Product Area: Replays",
+      "agent_suggestion": "Product Area: Settings - Members",
+      "github_label_observed": "Product Area: Settings - General",
+      "notes": "Determine whether the ownership belongs to Replay functionality or organization-wide permissions. Do not treat any suggestion as confirmed."
+    },
+    {
+      "name": "Russian duration formatting",
+      "issue_number": 124240,
+      "url": "https://github.com/getsentry/sentry/issues/124240",
+      "status": "pending",
+      "human_suggestion": null,
+      "agent_suggestion": null,
+      "github_label_observed": "Product Area: Explore",
+      "notes": "Shared localization or duration-formatting behavior. Support ownership has not been independently confirmed."
+    },
+    {
+      "name": "Unexpected email after issue completion",
+      "issue_number": 124170,
+      "url": "https://github.com/getsentry/sentry/issues/124170",
+      "status": "pending",
+      "human_suggestion": "Product Area: Settings - General",
+      "agent_suggestion": null,
+      "github_label_observed": "Product Area: Settings",
+      "notes": "Settings - General is a tentative suggestion. Confirm which functionality owns the notification behavior."
+    },
+    {
+      "name": "Integration self-rotating client secret + GitHub Actions OIDC",
+      "issue_number": 128745,
+      "url": "https://github.com/getsentry/sentry/issues/128745",
+      "status": "disputed",
+      "human_suggestion": "Product Area: Settings - Integrations",
+      "agent_suggestion": "Product Area: Settings - Developer Settings",
+      "github_label_observed": "Product Area: Settings - Integrations",
+      "notes": "GitHub label matches the reporter-selected Product Area in the issue form, so it is not independent evidence. Part 1 (rotate-secret for public integrations / sentry-apps) is managed under Developer Settings > Custom Integrations; nearest historical example #125705 (Sentry App webhooks) is Developer Settings. Part 2 (GitHub Actions OIDC for release uploads) is auth-token behavior; Settings - Auth is also a candidate. Similar older issues (#76660 client secret, #71744 auth tokens) used the retired APIs label. Two requests in one issue; may need splitting."
+    }
+  ]
+}

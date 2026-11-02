@@ -1,0 +1,30 @@
+{
+  "description": "Historical transfers out of getsentry/sentry, held out from RAG and triaged from a frozen snapshot. The historical action is what happened on GitHub, not confirmed correct ownership.",
+  "cases": [
+    {
+      "case_id": "H1",
+      "destination_url": "https://github.com/getsentry/sentry-dotnet/issues/4554",
+      "notes": "Build-time .NET SDK analyzer failure. Only sentry-dotnet example in the routing dataset, so holding it out leaves zero dotnet examples."
+    },
+    {
+      "case_id": "H2",
+      "destination_url": "https://github.com/getsentry/self-hosted/issues/4557",
+      "notes": "Self-hosted Snuba/ClickHouse timestamp error. Reporter-selected Product Area was Issues."
+    },
+    {
+      "case_id": "H3",
+      "destination_url": "https://github.com/getsentry/self-hosted/issues/4502",
+      "notes": "Self-hosted user, but the root cause cited is in src/sentry (ProjectKey relocation import). A STAY prediction is defensible; a mismatch here is not necessarily an agent error."
+    },
+    {
+      "case_id": "H4",
+      "destination_url": "https://github.com/getsentry/self-hosted/issues/4404",
+      "notes": "Self-hosted GitHub integration 404 with almost no detail (screenshot only). Reporter-selected Product Area was Settings - Repositories."
+    },
+    {
+      "case_id": "H5",
+      "destination_url": "https://github.com/getsentry/self-hosted/issues/4392",
+      "notes": "Helm-chart deployment, but the analysis points to taskworker code in src/sentry. Ambiguous ownership."
+    }
+  ]
+}

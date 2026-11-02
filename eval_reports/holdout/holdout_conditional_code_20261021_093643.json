@@ -1,0 +1,1120 @@
+{
+  "label": "conditional_code",
+  "run_at": "2026-10-21T09:36:43.934838",
+  "snapshots_frozen_at": "2026-10-15T12:17:10.484181+00:00",
+  "records": [
+    {
+      "case_id": "H1",
+      "title": "Support `Sentry.SourceGenerators` via Visual Studio 2019 version 16.11",
+      "historical_destination": "getsentry/sentry-dotnet",
+      "historical_url": "https://github.com/getsentry/sentry-dotnet/issues/4554",
+      "transferred_at": "2025-09-23T12:12:48Z",
+      "notes": "Build-time .NET SDK analyzer failure. Only sentry-dotnet example in the routing dataset, so holding it out leaves zero dotnet examples.",
+      "outcome": "MATCH",
+      "leakage_problems": [],
+      "result": {
+        "decision": "TRANSFER",
+        "suggested_repository": "getsentry/sentry-dotnet",
+        "product_area": null,
+        "reason": "The failure is in the Sentry .NET SDK's bundled Roslyn source generator during compilation. The analyzer cannot load Microsoft.CodeAnalysis 4.3.0 under Visual Studio 2019/UWP, and TreatWarningsAsErrors turns CS8032 into a build failure. This is SDK-specific rather than a Sentry SaaS application issue.",
+        "routing_history_summary": "No prior transfers or ownership comments. Similar routing results were unrelated and provide no contrary evidence.",
+        "historical_evidence": "No retrieved issue was a same-failure match. Historical search results were unrelated SaaS/UI or source-map issues and do not support a different destination.",
+        "supporting_issue_urls": [],
+        "suspected_cause": null,
+        "suspected_code_locations": [],
+        "next_action": "Have the sentry-dotnet maintainers assess Roslyn/Visual Studio 2019 compatibility and source-generator packaging, including whether the analyzer should target an older Microsoft.CodeAnalysis version or be conditionally disabled.",
+        "review_triggers": [
+          "transfer_recommended"
+        ],
+        "requires_human_review": true
+      },
+      "audit": {
+        "tool_calls": [
+          {
+            "tool": "find_similar_routing_decisions",
+            "arguments": "{\"title\":\"Support `Sentry.SourceGenerators` via Visual Studio 2019 version 16.11\",\"body\":\"When building a UWP project using Azure DevOps Pipelines with Sentry 5.15.1, the Sentry.SourceGenerators analyzer fails to load because Microsoft.CodeAnalysis version 4.3.0.0 cannot be found. TreatWarningAsErrors makes CS8032 fail the build. Request support for Visual Studio 2019 16.11.\",\"issue_url\":\"withheld for offline evaluation\"}"
+          },
+          {
+            "tool": "get_product_area_labels",
+            "arguments": "{}"
+          },
+          {
+            "tool": "find_similar_issues",
+            "arguments": "{\"query\":\"A UWP project built in Azure DevOps with Sentry's .NET source generator fails because the analyzer cannot load the required Microsoft.CodeAnalysis assembly, causing CS8032 and the build to fail when warnings are errors.\",\"symptoms\":[\"CS8032\",\"source generator\",\"Microsoft.CodeAnalysis\",\"analyzer\",\"UWP\",\"Azure DevOps\",\"TreatWarningAsErrors\"],\"limit\":5}"
+          },
+          {
+            "tool": "find_similar_issues",
+            "arguments": "{\"query\":\"The Sentry .NET SDK source generator analyzer is incompatible with the project's Visual Studio or Roslyn version, so Microsoft.CodeAnalysis cannot load and compilation fails with CS8032.\",\"symptoms\":[\"Microsoft.CodeAnalysis\",\"CS8032\",\"Roslyn\",\"source generator\",\"analyzer cannot be created\",\"Visual Studio 2019\"],\"limit\":8}"
+          }
+        ],
+        "code_lookup": false,
+        "retrievals": [
+          {
+            "tool": "find_similar_routing_decisions",
+            "query_title": "Support `Sentry.SourceGenerators` via Visual Studio 2019 version 16.11",
+            "excluded_urls": [
+              "https://github.com/getsentry/self-hosted/issues/4392",
+              "https://github.com/getsentry/self-hosted/issues/4404",
+              "https://github.com/getsentry/self-hosted/issues/4502",
+              "https://github.com/getsentry/self-hosted/issues/4557",
+              "https://github.com/getsentry/sentry-dotnet/issues/4554",
+              "withheld for offline evaluation"
+            ],
+            "rows_skipped": 5,
+            "returned": [
+              {
+                "issue_url": "https://github.com/getsentry/sentry/issues/76810",
+                "decision": "STAY",
+                "destination_repo": null,
+                "similarity": 0.457
+              },
+              {
+                "issue_url": "https://github.com/getsentry/sentry/issues/63095",
+                "decision": "STAY",
+                "destination_repo": null,
+                "similarity": 0.422
+              },
+              {
+                "issue_url": "https://github.com/getsentry/sentry/issues/53048",
+                "decision": "STAY",
+                "destination_repo": null,
+                "similarity": 0.406
+              },
+              {
+                "issue_url": "https://github.com/getsentry/self-hosted/issues/3504",
+                "decision": "TRANSFER",
+                "destination_repo": "getsentry/self-hosted",
+                "similarity": 0.486
+              },
+              {
+                "issue_url": "https://github.com/getsentry/self-hosted/issues/4405",
+                "decision": "TRANSFER",
+                "destination_repo": "getsentry/self-hosted",
+                "similarity": 0.462
+              },
+              {
+                "issue_url": "https://github.com/getsentry/self-hosted/issues/3481",
+                "decision": "TRANSFER",
+                "destination_repo": "getsentry/self-hosted",
+                "similarity": 0.441
+              }
+            ]
+          },
+          {
+            "tool": "find_similar_issues",
+            "query": "A UWP project built in Azure DevOps with Sentry's .NET source generator fails because the analyzer cannot load the required Microsoft.CodeAnalysis assembly, causing CS8032 and the build to fail when warnings are errors.",
+            "symptoms": [
+              "CS8032",
+              "source generator",
+              "Microsoft.CodeAnalysis",
+              "analyzer",
+              "UWP",
+              "Azure DevOps",
+              "TreatWarningAsErrors"
+            ],
+            "excluded_issue_number": null,
+            "returned": [
+              {
+                "url": "https://github.com/getsentry/sentry/issues/66428",
+                "product_area": "Product Area: Issues",
+                "similarity": 0.492,
+                "matched_symptoms": [],
+                "score": 0.503
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/78326",
+                "product_area": "Product Area: Issues",
+                "similarity": 0.486,
+                "matched_symptoms": [],
+                "score": 0.498
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/63830",
+                "product_area": "Product Area: Issues",
+                "similarity": 0.479,
+                "matched_symptoms": [],
+                "score": 0.489
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/54965",
+                "product_area": "Product Area: Issues",
+                "similarity": 0.479,
+                "matched_symptoms": [],
+                "score": 0.487
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/86456",
+                "product_area": "Product Area: Issues",
+                "similarity": 0.46,
+                "matched_symptoms": [],
+                "score": 0.474
+              }
+            ]
+          },
+          {
+            "tool": "find_similar_issues",
+            "query": "The Sentry .NET SDK source generator analyzer is incompatible with the project's Visual Studio or Roslyn version, so Microsoft.CodeAnalysis cannot load and compilation fails with CS8032.",
+            "symptoms": [
+              "Microsoft.CodeAnalysis",
+              "CS8032",
+              "Roslyn",
+              "source generator",
+              "analyzer cannot be created",
+              "Visual Studio 2019"
+            ],
+            "excluded_issue_number": null,
+            "returned": [
+              {
+                "url": "https://github.com/getsentry/sentry/issues/72836",
+                "product_area": "Product Area: Issues - Source Maps",
+                "similarity": 0.477,
+                "matched_symptoms": [],
+                "score": 0.489
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/54965",
+                "product_area": "Product Area: Issues",
+                "similarity": 0.468,
+                "matched_symptoms": [],
+                "score": 0.477
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/63235",
+                "product_area": "Product Area: Issues",
+                "similarity": 0.465,
+                "matched_symptoms": [],
+                "score": 0.475
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/53716",
+                "product_area": "Product Area: Issues",
+                "similarity": 0.464,
+                "matched_symptoms": [],
+                "score": 0.472
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/86456",
+                "product_area": "Product Area: Issues",
+                "similarity": 0.459,
+                "matched_symptoms": [],
+                "score": 0.472
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/66428",
+                "product_area": "Product Area: Issues",
+                "similarity": 0.46,
+                "matched_symptoms": [],
+                "score": 0.471
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/47598",
+                "product_area": "Product Area: Issues",
+                "similarity": 0.463,
+                "matched_symptoms": [],
+                "score": 0.47
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/106657",
+                "product_area": "Product Area: Issues - Source Maps",
+                "similarity": 0.451,
+                "matched_symptoms": [],
+                "score": 0.468
+              }
+            ]
+          }
+        ],
+        "usage": {
+          "requests": 4,
+          "input_tokens": 21048,
+          "output_tokens": 568,
+          "total_tokens": 21616
+        }
+      },
+      "error": ""
+    },
+    {
+      "case_id": "H2",
+      "title": "Snuba seems to set timestamp_ms to a max value",
+      "historical_destination": "getsentry/self-hosted",
+      "historical_url": "https://github.com/getsentry/self-hosted/issues/4557",
+      "transferred_at": "2026-10-12T10:06:43Z",
+      "notes": "Self-hosted Snuba/ClickHouse timestamp error. Reporter-selected Product Area was Issues.",
+      "outcome": "STAY",
+      "leakage_problems": [],
+      "result": {
+        "decision": "STAY",
+        "suggested_repository": "getsentry/sentry",
+        "product_area": "Product Area: Issues",
+        "reason": "The failure is in Sentry’s event-detail rendering path: malformed Snuba/ClickHouse timestamp data causes the UI request to return HTTP 500. No SDK-specific ownership is indicated, and the routing history contains no transfer or ownership dispute.",
+        "routing_history_summary": "No prior transfers or comments. Similar routing examples are provisional STAY cases; confirmed self-hosted transfers involved deployment/storage/container concerns, unlike this product bug.",
+        "historical_evidence": "No retrieved issue describes the same timestamp overflow failure. Issues 91617 and 102643 are background-only event-detail/500 problems with different symptoms and labels. Product Area: Issues best matches failure to display an event.",
+        "supporting_issue_urls": [],
+        "suspected_cause": "Likely, the event-detail failure occurs in backend timestamp normalization: `timestamp_ms` is parsed into a Python datetime, and the ClickHouse max sentinel (`9999-12-31`) appears to overflow during conversion, producing the SnubaError. The current code search also shows frontend timestamp parsing, but its implementation could not be read within the tool budget.",
+        "suspected_code_locations": [
+          "https://github.com/getsentry/sentry/blob/ab5b328fa6a9181c1542305d99675a6b232066e6/src/sentry/api/utils.py#L1150-L592",
+          "https://github.com/getsentry/sentry/blob/ab5b328fa6a9181c1542305d99675a6b232066e6/src/sentry/snuba/events.py"
+        ],
+        "next_action": "Inspect and add regression coverage around `reformat_timestamp_ms_to_isoformat` in `src/sentry/api/utils.py`, plus the event timestamp schema in `src/sentry/snuba/events.py`, handling ClickHouse max-value sentinels before datetime conversion. The current default branch may differ from self-hosted 31.3.0.",
+        "review_triggers": [
+          "weak_product_area_evidence"
+        ],
+        "requires_human_review": true
+      },
+      "audit": {
+        "tool_calls": [
+          {
+            "tool": "find_similar_routing_decisions",
+            "arguments": "{\"title\":\"Snuba seems to set timestamp_ms to a max value\",\"body\":\"self-hosted Sentry with Snuba on ClickHouse 26.x+; events get timestamp_ms = '9999-12-31 23:59:59'; viewing event in Sentry UI returns HTTP 500 SnubaError year 58728 is out of range. Version 31.3.0.\",\"issue_url\":\"(withheld for offline evaluation)\"}"
+          },
+          {
+            "tool": "get_product_area_labels",
+            "arguments": "{}"
+          },
+          {
+            "tool": "find_similar_issues",
+            "arguments": "{\"query\":\"When self-hosted Sentry with Snuba on ClickHouse 26.x+ ingests events, timestamp_ms becomes 9999-12-31 23:59:59 and opening the event in the UI fails with HTTP 500 SnubaError year 58728 is out of range instead of displaying the event and timeline.\",\"symptoms\":[\"timestamp_ms\",\"9999-12-31\",\"SnubaError\",\"year 58728\",\"HTTP 500\",\"event UI\"],\"limit\":5}"
+          },
+          {
+            "tool": "find_similar_issues",
+            "arguments": "{\"query\":\"Opening an event in the self-hosted Sentry UI fails because Snuba/ClickHouse returns an invalid maximum timestamp, causing a backend 500 date conversion error; event details and timeline cannot be displayed.\",\"symptoms\":[\"opening event\",\"event details\",\"timeline\",\"ClickHouse\",\"invalid timestamp\",\"date conversion\",\"500\"],\"limit\":5}"
+          },
+          {
+            "tool": "search_sentry_code",
+            "arguments": "{\"query\":\"timestamp_ms\",\"path\":\"src/sentry\"}"
+          },
+          {
+            "tool": "search_sentry_code",
+            "arguments": "{\"query\":\"SnubaError\",\"path\":\"src/sentry\"}"
+          },
+          {
+            "tool": "search_sentry_code",
+            "arguments": "{\"query\":\"timestamp_ms\",\"path\":\"static/app\"}"
+          },
+          {
+            "tool": "read_sentry_file",
+            "arguments": "{\"path\":\"src/sentry/api/utils.py\",\"start_line\":1150,\"end_line\":1195}"
+          },
+          {
+            "tool": "read_sentry_file",
+            "arguments": "{\"path\":\"static/app/utils/date/eventTimestampMs.ts\",\"start_line\":1,\"end_line\":100}"
+          }
+        ],
+        "code_lookup": true,
+        "retrievals": [
+          {
+            "tool": "find_similar_routing_decisions",
+            "query_title": "Snuba seems to set timestamp_ms to a max value",
+            "excluded_urls": [
+              "(withheld for offline evaluation)",
+              "https://github.com/getsentry/self-hosted/issues/4392",
+              "https://github.com/getsentry/self-hosted/issues/4404",
+              "https://github.com/getsentry/self-hosted/issues/4502",
+              "https://github.com/getsentry/self-hosted/issues/4557",
+              "https://github.com/getsentry/sentry-dotnet/issues/4554"
+            ],
+            "rows_skipped": 5,
+            "returned": [
+              {
+                "issue_url": "https://github.com/getsentry/sentry/issues/64000",
+                "decision": "STAY",
+                "destination_repo": null,
+                "similarity": 0.494
+              },
+              {
+                "issue_url": "https://github.com/getsentry/sentry/issues/126009",
+                "decision": "STAY",
+                "destination_repo": null,
+                "similarity": 0.456
+              },
+              {
+                "issue_url": "https://github.com/getsentry/sentry/issues/125705",
+                "decision": "STAY",
+                "destination_repo": null,
+                "similarity": 0.455
+              },
+              {
+                "issue_url": "https://github.com/getsentry/self-hosted/issues/4080",
+                "decision": "TRANSFER",
+                "destination_repo": "getsentry/self-hosted",
+                "similarity": 0.482
+              },
+              {
+                "issue_url": "https://github.com/getsentry/self-hosted/issues/3902",
+                "decision": "TRANSFER",
+                "destination_repo": "getsentry/self-hosted",
+                "similarity": 0.478
+              },
+              {
+                "issue_url": "https://github.com/getsentry/self-hosted/issues/4271",
+                "decision": "TRANSFER",
+                "destination_repo": "getsentry/self-hosted",
+                "similarity": 0.477
+              }
+            ]
+          },
+          {
+            "tool": "find_similar_issues",
+            "query": "When self-hosted Sentry with Snuba on ClickHouse 26.x+ ingests events, timestamp_ms becomes 9999-12-31 23:59:59 and opening the event in the UI fails with HTTP 500 SnubaError year 58728 is out of range instead of displaying the event and timeline.",
+            "symptoms": [
+              "timestamp_ms",
+              "9999-12-31",
+              "SnubaError",
+              "year 58728",
+              "HTTP 500",
+              "event UI"
+            ],
+            "excluded_issue_number": null,
+            "returned": [
+              {
+                "url": "https://github.com/getsentry/sentry/issues/103965",
+                "product_area": "Product Area: Insights",
+                "similarity": 0.569,
+                "matched_symptoms": [
+                  "HTTP 500"
+                ],
+                "score": 0.61
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/102643",
+                "product_area": "Product Area: Explore",
+                "similarity": 0.556,
+                "matched_symptoms": [],
+                "score": 0.572
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/59610",
+                "product_area": "Product Area: Issues",
+                "similarity": 0.561,
+                "matched_symptoms": [],
+                "score": 0.571
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/73376",
+                "product_area": "Product Area: Issues",
+                "similarity": 0.553,
+                "matched_symptoms": [],
+                "score": 0.565
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/119949",
+                "product_area": "Product Area: APIs",
+                "similarity": 0.511,
+                "matched_symptoms": [
+                  "HTTP 500"
+                ],
+                "score": 0.555
+              }
+            ]
+          },
+          {
+            "tool": "find_similar_issues",
+            "query": "Opening an event in the self-hosted Sentry UI fails because Snuba/ClickHouse returns an invalid maximum timestamp, causing a backend 500 date conversion error; event details and timeline cannot be displayed.",
+            "symptoms": [
+              "opening event",
+              "event details",
+              "timeline",
+              "ClickHouse",
+              "invalid timestamp",
+              "date conversion",
+              "500"
+            ],
+            "excluded_issue_number": null,
+            "returned": [
+              {
+                "url": "https://github.com/getsentry/sentry/issues/91617",
+                "product_area": "Product Area: Insights",
+                "similarity": 0.587,
+                "matched_symptoms": [
+                  "event details"
+                ],
+                "score": 0.623
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/103965",
+                "product_area": "Product Area: Insights",
+                "similarity": 0.558,
+                "matched_symptoms": [
+                  "500"
+                ],
+                "score": 0.596
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/102643",
+                "product_area": "Product Area: Explore",
+                "similarity": 0.551,
+                "matched_symptoms": [
+                  "500"
+                ],
+                "score": 0.589
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/80549",
+                "product_area": "Product Area: Ingestion and Filtering",
+                "similarity": 0.565,
+                "matched_symptoms": [],
+                "score": 0.578
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/70435",
+                "product_area": "Product Area: Performance",
+                "similarity": 0.531,
+                "matched_symptoms": [
+                  "event details"
+                ],
+                "score": 0.564
+              }
+            ]
+          },
+          {
+            "tool": "search_sentry_code",
+            "query": "SnubaError",
+            "path": "src/sentry",
+            "returned": [
+              "src/sentry/utils/snuba.py",
+              "src/sentry/snuba/tasks.py",
+              "src/sentry/dynamic_sampling/per_org/telemetry.py",
+              "src/sentry/issues/attributes.py",
+              "src/sentry/api/utils.py",
+              "src/sentry/issues/auto_source_code_config/stack_filename_sample.py",
+              "src/sentry/data_export/utils.py",
+              "src/sentry/utils/snuba_rpc.py"
+            ],
+            "error": null
+          },
+          {
+            "tool": "search_sentry_code",
+            "query": "timestamp_ms",
+            "path": "src/sentry",
+            "returned": [
+              "src/sentry/replays/usecases/summarize.py",
+              "src/sentry/api/utils.py",
+              "src/sentry/snuba/events.py",
+              "src/sentry/snuba/trace.py",
+              "src/sentry/replays/endpoints/organization_replay_events_meta.py",
+              "src/sentry/seer/autofix/webhooks.py",
+              "src/sentry/uptime/consumers/eap_converter.py",
+              "src/sentry/replays/testutils.py"
+            ],
+            "error": null
+          },
+          {
+            "tool": "search_sentry_code",
+            "query": "timestamp_ms",
+            "path": "static/app",
+            "returned": [
+              "static/app/utils/date/eventTimestampMs.ts",
+              "static/app/utils/replays/hydrateErrors.tsx",
+              "static/app/components/seer/markdown/__stories__/logEmbedStory.spec.tsx",
+              "static/app/utils/replays/hooks/useLoadReplayReader.tsx",
+              "static/app/utils/replays/replayReader.tsx",
+              "static/app/utils/replays/types.tsx",
+              "static/app/utils/replays/hooks/useReplayData.tsx",
+              "static/app/utils/replays/replayReader.spec.tsx"
+            ],
+            "error": null
+          },
+          {
+            "tool": "read_sentry_file",
+            "path": "src/sentry/api/utils.py",
+            "lines": [
+              1150,
+              592
+            ]
+          }
+        ],
+        "usage": {
+          "requests": 8,
+          "input_tokens": 35743,
+          "output_tokens": 1000,
+          "total_tokens": 36743
+        }
+      },
+      "error": ""
+    },
+    {
+      "case_id": "H3",
+      "title": "sentry import global silently drops all but one ProjectKey per project",
+      "historical_destination": "getsentry/self-hosted",
+      "historical_url": "https://github.com/getsentry/self-hosted/issues/4502",
+      "transferred_at": "2026-09-11T07:44:28Z",
+      "notes": "Self-hosted user, but the root cause cited is in src/sentry (ProjectKey relocation import). A STAY prediction is defensible; a mismatch here is not necessarily an agent error.",
+      "outcome": "STAY",
+      "leakage_problems": [],
+      "result": {
+        "decision": "STAY",
+        "suggested_repository": "getsentry/sentry",
+        "product_area": "Product Area: Org Relocation",
+        "reason": "The defect is in the core global export/import relocation implementation (`ProjectKey.write_relocation_import`), not in an SDK or the self-hosted deployment wrapper. The report provides a precise reproduction and code-level failure: project-scoped get_or_create overwrites multiple keys and silently loses DSNs.",
+        "routing_history_summary": "No transfers or ownership comments. Historical routing examples include relocation/import issues staying in getsentry/sentry; self-hosted transfer examples concern deployment-specific failures and are not comparable.",
+        "historical_evidence": "No retrieved issue describes the same failure. Issue #83702 is related background on self-hosted-to-SaaS relocation, but does not establish this ProjectKey import behavior or ownership. Product Area: Org Relocation is selected because the failure occurs during global backup/relocation import.",
+        "supporting_issue_urls": [],
+        "suspected_cause": "Likely `ProjectKey.write_relocation_import` uses project-only deduplication, causing multiple imported keys for one project to overwrite the same row rather than insert distinct keys. The reported public-key regeneration behavior should also be reviewed in the same method; the current default-branch code may differ from self-hosted 26.7.2.",
+        "suspected_code_locations": [
+          "https://github.com/getsentry/sentry/blob/ab5b328fa6a9181c1542305d99675a6b232066e6/src/sentry/models/projectkey.py"
+        ],
+        "next_action": "Inspect and test `ProjectKey.write_relocation_import` at the cited model location, then add a round-trip test covering multiple keys per project and existing-key imports.",
+        "review_triggers": [
+          "weak_product_area_evidence"
+        ],
+        "requires_human_review": true
+      },
+      "audit": {
+        "tool_calls": [
+          {
+            "tool": "find_similar_routing_decisions",
+            "arguments": "{\"title\":\"sentry import global silently drops all but one ProjectKey per project\",\"body\":\"Sentry self-hosted 26.7.2 global import silently overwrites multiple ProjectKey rows per project because ProjectKey.write_relocation_import uses get_or_create keyed only on project; restore loses DSNs and reports success. Related behavior regenerates public keys on existing databases.\",\"issue_url\":\"(withheld for offline evaluation)\"}"
+          },
+          {
+            "tool": "get_product_area_labels",
+            "arguments": "{}"
+          },
+          {
+            "tool": "find_similar_issues",
+            "arguments": "{\"query\":\"During a global backup restore, importing multiple project keys for the same project silently overwrites earlier keys, reports success, and loses DSNs\",\"symptoms\":[\"global import\",\"ProjectKey\",\"project key\",\"DSN\",\"silently overwrites\",\"restore\",\"multiple keys\"],\"limit\":8}"
+          },
+          {
+            "tool": "search_sentry_code",
+            "arguments": "{\"query\":\"write_relocation_import ProjectKey\",\"path\":\"src/sentry\"}"
+          },
+          {
+            "tool": "read_sentry_file",
+            "arguments": "{\"path\":\"src/sentry/models/projectkey.py\",\"start_line\":100,\"end_line\":180}"
+          },
+          {
+            "tool": "read_sentry_file",
+            "arguments": "{\"path\":\"src/sentry/models/projectkey.py\",\"start_line\":240,\"end_line\":310}"
+          },
+          {
+            "tool": "search_sentry_code",
+            "arguments": "{\"query\":\"matching_public_key generate_api_key\",\"path\":\"src/sentry/models\"}"
+          }
+        ],
+        "code_lookup": true,
+        "retrievals": [
+          {
+            "tool": "find_similar_routing_decisions",
+            "query_title": "sentry import global silently drops all but one ProjectKey per project",
+            "excluded_urls": [
+              "(withheld for offline evaluation)",
+              "https://github.com/getsentry/self-hosted/issues/4392",
+              "https://github.com/getsentry/self-hosted/issues/4404",
+              "https://github.com/getsentry/self-hosted/issues/4502",
+              "https://github.com/getsentry/self-hosted/issues/4557",
+              "https://github.com/getsentry/sentry-dotnet/issues/4554"
+            ],
+            "rows_skipped": 5,
+            "returned": [
+              {
+                "issue_url": "https://github.com/getsentry/sentry/issues/83702",
+                "decision": "STAY",
+                "destination_repo": null,
+                "similarity": 0.519
+              },
+              {
+                "issue_url": "https://github.com/getsentry/sentry/issues/64000",
+                "decision": "STAY",
+                "destination_repo": null,
+                "similarity": 0.471
+              },
+              {
+                "issue_url": "https://github.com/getsentry/sentry/issues/71905",
+                "decision": "STAY",
+                "destination_repo": null,
+                "similarity": 0.45
+              },
+              {
+                "issue_url": "https://github.com/getsentry/self-hosted/issues/3977",
+                "decision": "TRANSFER",
+                "destination_repo": "getsentry/self-hosted",
+                "similarity": 0.563
+              },
+              {
+                "issue_url": "https://github.com/getsentry/self-hosted/issues/4131",
+                "decision": "TRANSFER",
+                "destination_repo": "getsentry/self-hosted",
+                "similarity": 0.499
+              },
+              {
+                "issue_url": "https://github.com/getsentry/self-hosted/issues/4393",
+                "decision": "TRANSFER",
+                "destination_repo": "getsentry/self-hosted",
+                "similarity": 0.494
+              }
+            ]
+          },
+          {
+            "tool": "find_similar_issues",
+            "query": "During a global backup restore, importing multiple project keys for the same project silently overwrites earlier keys, reports success, and loses DSNs",
+            "symptoms": [
+              "global import",
+              "ProjectKey",
+              "project key",
+              "DSN",
+              "silently overwrites",
+              "restore",
+              "multiple keys"
+            ],
+            "excluded_issue_number": null,
+            "returned": [
+              {
+                "url": "https://github.com/getsentry/sentry/issues/58084",
+                "product_area": "Product Area: Alerts",
+                "similarity": 0.389,
+                "matched_symptoms": [
+                  "DSN"
+                ],
+                "score": 0.419
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/65924",
+                "product_area": "Product Area: Ingestion and Filtering",
+                "similarity": 0.386,
+                "matched_symptoms": [
+                  "DSN"
+                ],
+                "score": 0.418
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/86483",
+                "product_area": "Product Area: Discover",
+                "similarity": 0.383,
+                "matched_symptoms": [
+                  "DSN"
+                ],
+                "score": 0.418
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/123755",
+                "product_area": "Product Area: Crons",
+                "similarity": 0.375,
+                "matched_symptoms": [
+                  "DSN"
+                ],
+                "score": 0.416
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/112570",
+                "product_area": "Product Area: Performance",
+                "similarity": 0.374,
+                "matched_symptoms": [
+                  "DSN"
+                ],
+                "score": 0.413
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/62029",
+                "product_area": "Product Area: Issues",
+                "similarity": 0.373,
+                "matched_symptoms": [
+                  "DSN"
+                ],
+                "score": 0.404
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/48771",
+                "product_area": "Product Area: Issues",
+                "similarity": 0.374,
+                "matched_symptoms": [
+                  "DSN"
+                ],
+                "score": 0.403
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/83702",
+                "product_area": "Product Area: Org Relocation",
+                "similarity": 0.366,
+                "matched_symptoms": [
+                  "DSN"
+                ],
+                "score": 0.401
+              }
+            ]
+          },
+          {
+            "tool": "search_sentry_code",
+            "query": "write_relocation_import ProjectKey",
+            "path": "src/sentry",
+            "returned": [
+              "src/sentry/models/projectkey.py"
+            ],
+            "error": null
+          },
+          {
+            "tool": "read_sentry_file",
+            "path": "src/sentry/models/projectkey.py",
+            "lines": [
+              100,
+              179
+            ]
+          },
+          {
+            "tool": "read_sentry_file",
+            "path": "src/sentry/models/projectkey.py",
+            "lines": [
+              240,
+              310
+            ]
+          },
+          {
+            "tool": "search_sentry_code",
+            "query": "matching_public_key generate_api_key",
+            "path": "src/sentry/models",
+            "returned": [
+              "src/sentry/models/projectkey.py"
+            ],
+            "error": null
+          }
+        ],
+        "usage": {
+          "requests": 7,
+          "input_tokens": 25437,
+          "output_tokens": 792,
+          "total_tokens": 26229
+        }
+      },
+      "error": ""
+    },
+    {
+      "case_id": "H4",
+      "title": "404 when adding a new GH repository",
+      "historical_destination": "getsentry/self-hosted",
+      "historical_url": "https://github.com/getsentry/self-hosted/issues/4404",
+      "transferred_at": "2026-07-09T04:33:21Z",
+      "notes": "Self-hosted GitHub integration 404 with almost no detail (screenshot only). Reporter-selected Product Area was Settings - Repositories.",
+      "outcome": "MATCH",
+      "leakage_problems": [],
+      "result": {
+        "decision": "TRANSFER",
+        "suggested_repository": "getsentry/self-hosted",
+        "product_area": null,
+        "reason": "The report is explicitly about a self-hosted deployment and a failure while configuring its GitHub repository integration. A highly similar confirmed transfer for a self-hosted repository-integration error was routed to getsentry/self-hosted.",
+        "routing_history_summary": "No prior transfers or comments. Historical routing includes confirmed transfers of comparable self-hosted repository/integration configuration failures to getsentry/self-hosted.",
+        "historical_evidence": "The closest routing example is the confirmed transfer of a self-hosted Azure DevOps repository-add failure to getsentry/self-hosted (https://github.com/getsentry/self-hosted/issues/4405). Similar-issue search found no same-failure GitHub 404 issue; returned items were topic-only.",
+        "supporting_issue_urls": [
+          "https://github.com/getsentry/self-hosted/issues/4405"
+        ],
+        "suspected_cause": null,
+        "suspected_code_locations": [],
+        "next_action": "Review or transfer to getsentry/self-hosted; request the exact 404 endpoint, response body, Sentry version, and screenshot details if needed for diagnosis.",
+        "review_triggers": [
+          "transfer_recommended"
+        ],
+        "requires_human_review": true
+      },
+      "audit": {
+        "tool_calls": [
+          {
+            "tool": "find_similar_routing_decisions",
+            "arguments": "{\"title\":\"404 when adding a new GH repository\",\"body\":\"Environment: self-hosted. When trying to add a new GitHub Repository, a 404 exception appears. Expected to be able to add a repository; actual result cannot add it.\",\"issue_url\":\"\"}"
+          },
+          {
+            "tool": "get_product_area_labels",
+            "arguments": "{}"
+          },
+          {
+            "tool": "find_similar_issues",
+            "arguments": "{\"query\":\"When a self-hosted user tries to add a new GitHub repository, the integration request returns a 404 and the repository cannot be added.\",\"symptoms\":[\"404\",\"adding repository\",\"GitHub Repository\",\"cannot add\",\"integration\"],\"limit\":5}"
+          }
+        ],
+        "code_lookup": false,
+        "retrievals": [
+          {
+            "tool": "find_similar_routing_decisions",
+            "query_title": "404 when adding a new GH repository",
+            "excluded_urls": [
+              "https://github.com/getsentry/self-hosted/issues/4392",
+              "https://github.com/getsentry/self-hosted/issues/4404",
+              "https://github.com/getsentry/self-hosted/issues/4502",
+              "https://github.com/getsentry/self-hosted/issues/4557",
+              "https://github.com/getsentry/sentry-dotnet/issues/4554"
+            ],
+            "rows_skipped": 5,
+            "returned": [
+              {
+                "issue_url": "https://github.com/getsentry/sentry/issues/80171",
+                "decision": "STAY",
+                "destination_repo": null,
+                "similarity": 0.425
+              },
+              {
+                "issue_url": "https://github.com/getsentry/sentry/issues/83702",
+                "decision": "STAY",
+                "destination_repo": null,
+                "similarity": 0.4
+              },
+              {
+                "issue_url": "https://github.com/getsentry/sentry/issues/58518",
+                "decision": "STAY",
+                "destination_repo": null,
+                "similarity": 0.37
+              },
+              {
+                "issue_url": "https://github.com/getsentry/self-hosted/issues/4405",
+                "decision": "TRANSFER",
+                "destination_repo": "getsentry/self-hosted",
+                "similarity": 0.554
+              },
+              {
+                "issue_url": "https://github.com/getsentry/self-hosted/issues/3920",
+                "decision": "TRANSFER",
+                "destination_repo": "getsentry/self-hosted",
+                "similarity": 0.439
+              },
+              {
+                "issue_url": "https://github.com/getsentry/self-hosted/issues/3819",
+                "decision": "TRANSFER",
+                "destination_repo": "getsentry/self-hosted",
+                "similarity": 0.427
+              }
+            ]
+          },
+          {
+            "tool": "find_similar_issues",
+            "query": "When a self-hosted user tries to add a new GitHub repository, the integration request returns a 404 and the repository cannot be added.",
+            "symptoms": [
+              "404",
+              "adding repository",
+              "GitHub Repository",
+              "cannot add",
+              "integration"
+            ],
+            "excluded_issue_number": null,
+            "returned": [
+              {
+                "url": "https://github.com/getsentry/sentry/issues/98798",
+                "product_area": "Product Area: Issues",
+                "similarity": 0.462,
+                "matched_symptoms": [
+                  "integration"
+                ],
+                "score": 0.508
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/69309",
+                "product_area": "Product Area: APIs",
+                "similarity": 0.431,
+                "matched_symptoms": [
+                  "integration"
+                ],
+                "score": 0.472
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/59940",
+                "product_area": "Product Area: APIs",
+                "similarity": 0.431,
+                "matched_symptoms": [
+                  "integration"
+                ],
+                "score": 0.47
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/83148",
+                "product_area": "Product Area: Alerts",
+                "similarity": 0.387,
+                "matched_symptoms": [
+                  "GitHub Repository",
+                  "integration"
+                ],
+                "score": 0.461
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/43399",
+                "product_area": "Product Area: Issues",
+                "similarity": 0.424,
+                "matched_symptoms": [
+                  "integration"
+                ],
+                "score": 0.46
+              }
+            ]
+          }
+        ],
+        "usage": {
+          "requests": 3,
+          "input_tokens": 12905,
+          "output_tokens": 424,
+          "total_tokens": 13329
+        }
+      },
+      "error": ""
+    },
+    {
+      "case_id": "H5",
+      "title": "Taskworker KAFKA_TOPIC_OVERRIDES Ignored",
+      "historical_destination": "getsentry/self-hosted",
+      "historical_url": "https://github.com/getsentry/self-hosted/issues/4392",
+      "transferred_at": "2026-07-01T06:28:44Z",
+      "notes": "Helm-chart deployment, but the analysis points to taskworker code in src/sentry. Ambiguous ownership.",
+      "outcome": "MATCH",
+      "leakage_problems": [],
+      "result": {
+        "decision": "TRANSFER",
+        "suggested_repository": "getsentry/self-hosted",
+        "product_area": null,
+        "reason": "The issue is specific to a self-hosted Helm deployment and its Kafka topic-prefix configuration. The reported failure occurs in the deployed self-hosted taskworker setup under strict Kafka ACLs, so getsentry/self-hosted is the best-supported destination.",
+        "routing_history_summary": "No prior transfers or ownership comments. Historical routing includes confirmed transfers of taskworker/self-hosted operational failures to getsentry/self-hosted, including taskworker failures and missing event processing.",
+        "historical_evidence": "Confirmed transfers: https://github.com/getsentry/self-hosted/issues/4241 (taskworker behavior), https://github.com/getsentry/self-hosted/issues/4276 (taskworker failure/no events), and https://github.com/getsentry/self-hosted/issues/4271 (taskworker resource issue). Similar-issue search found no same-failure match; results were only broad taskworker or self-hosted background.",
+        "supporting_issue_urls": [
+          "https://github.com/getsentry/self-hosted/issues/4241",
+          "https://github.com/getsentry/self-hosted/issues/4276",
+          "https://github.com/getsentry/self-hosted/issues/4271"
+        ],
+        "suspected_cause": null,
+        "suspected_code_locations": [],
+        "next_action": "Human maintainers should confirm whether the Helm chart or Sentry taskworker producer owns the fix, then route to the appropriate repository; if accepted in self-hosted, investigate propagation of real topic names through the taskbroker/Arroyo producer path.",
+        "review_triggers": [
+          "transfer_recommended"
+        ],
+        "requires_human_review": true
+      },
+      "audit": {
+        "tool_calls": [
+          {
+            "tool": "find_similar_routing_decisions",
+            "arguments": "{\"title\":\"Taskworker KAFKA_TOPIC_OVERRIDES Ignored\",\"body\":\"Self-hosted Sentry 26.5.0 deployed with Helm external Kafka and kafkaTopicOverrides.prefix. Taskworker topics ignore KAFKA_TOPIC_OVERRIDES, producing to literal taskworker topics and causing Kafka TOPIC_AUTHORIZATION_FAILED under strict prefix ACLs. Suspected taskworker producer path does not resolve get_topic_definition real_topic_name.\",\"issue_url\":\"\"}"
+          },
+          {
+            "tool": "get_product_area_labels",
+            "arguments": "{}"
+          },
+          {
+            "tool": "find_similar_issues",
+            "arguments": "{\"query\":\"Self-hosted Sentry with Kafka topic prefix overrides sends taskworker messages to unprefixed topics, causing authorization failures instead of using configured real topic names\",\"symptoms\":[\"KAFKA_TOPIC_OVERRIDES\",\"taskworker\",\"TOPIC_AUTHORIZATION_FAILED\",\"topic prefix\",\"Kafka ACL\"],\"limit\":8}"
+          }
+        ],
+        "code_lookup": false,
+        "retrievals": [
+          {
+            "tool": "find_similar_routing_decisions",
+            "query_title": "Taskworker KAFKA_TOPIC_OVERRIDES Ignored",
+            "excluded_urls": [
+              "https://github.com/getsentry/self-hosted/issues/4392",
+              "https://github.com/getsentry/self-hosted/issues/4404",
+              "https://github.com/getsentry/self-hosted/issues/4502",
+              "https://github.com/getsentry/self-hosted/issues/4557",
+              "https://github.com/getsentry/sentry-dotnet/issues/4554"
+            ],
+            "rows_skipped": 5,
+            "returned": [
+              {
+                "issue_url": "https://github.com/getsentry/sentry/issues/64000",
+                "decision": "STAY",
+                "destination_repo": null,
+                "similarity": 0.414
+              },
+              {
+                "issue_url": "https://github.com/getsentry/sentry/issues/58518",
+                "decision": "STAY",
+                "destination_repo": null,
+                "similarity": 0.377
+              },
+              {
+                "issue_url": "https://github.com/getsentry/sentry/issues/63416",
+                "decision": "STAY",
+                "destination_repo": null,
+                "similarity": 0.368
+              },
+              {
+                "issue_url": "https://github.com/getsentry/self-hosted/issues/4241",
+                "decision": "TRANSFER",
+                "destination_repo": "getsentry/self-hosted",
+                "similarity": 0.545
+              },
+              {
+                "issue_url": "https://github.com/getsentry/self-hosted/issues/4276",
+                "decision": "TRANSFER",
+                "destination_repo": "getsentry/self-hosted",
+                "similarity": 0.507
+              },
+              {
+                "issue_url": "https://github.com/getsentry/self-hosted/issues/4271",
+                "decision": "TRANSFER",
+                "destination_repo": "getsentry/self-hosted",
+                "similarity": 0.502
+              }
+            ]
+          },
+          {
+            "tool": "find_similar_issues",
+            "query": "Self-hosted Sentry with Kafka topic prefix overrides sends taskworker messages to unprefixed topics, causing authorization failures instead of using configured real topic names",
+            "symptoms": [
+              "KAFKA_TOPIC_OVERRIDES",
+              "taskworker",
+              "TOPIC_AUTHORIZATION_FAILED",
+              "topic prefix",
+              "Kafka ACL"
+            ],
+            "excluded_issue_number": null,
+            "returned": [
+              {
+                "url": "https://github.com/getsentry/sentry/issues/115704",
+                "product_area": "Product Area: Issues",
+                "similarity": 0.462,
+                "matched_symptoms": [
+                  "taskworker"
+                ],
+                "score": 0.511
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/77692",
+                "product_area": "Product Area: Crons",
+                "similarity": 0.496,
+                "matched_symptoms": [],
+                "score": 0.508
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/109178",
+                "product_area": "Product Area: Explore",
+                "similarity": 0.47,
+                "matched_symptoms": [],
+                "score": 0.487
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/70841",
+                "product_area": "Product Area: Ingestion and Filtering",
+                "similarity": 0.471,
+                "matched_symptoms": [],
+                "score": 0.483
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/55544",
+                "product_area": "Product Area: Issues",
+                "similarity": 0.473,
+                "matched_symptoms": [],
+                "score": 0.482
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/57794",
+                "product_area": "Product Area: Other",
+                "similarity": 0.467,
+                "matched_symptoms": [],
+                "score": 0.476
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/66592",
+                "product_area": "Product Area: Issues",
+                "similarity": 0.458,
+                "matched_symptoms": [],
+                "score": 0.469
+              },
+              {
+                "url": "https://github.com/getsentry/sentry/issues/66917",
+                "product_area": "Product Area: Issues",
+                "similarity": 0.456,
+                "matched_symptoms": [],
+                "score": 0.467
+              }
+            ]
+          }
+        ],
+        "usage": {
+          "requests": 2,
+          "input_tokens": 11386,
+          "output_tokens": 553,
+          "total_tokens": 11939
+        }
+      },
+      "error": ""
+    }
+  ]
+}

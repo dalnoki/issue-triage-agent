@@ -1,0 +1,9 @@
+.env
+.env.*
+.venv/
+__pycache__/
+*.db
+.DS_Store
+.claude/
+Untitled
+.agents/

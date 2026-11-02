@@ -1,0 +1,55 @@
+{
+  "regression": [
+    {
+      "name": "Logs Explore UI bug",
+      "url": "https://github.com/getsentry/sentry/issues/126412",
+      "expected_decision": "STAY",
+      "expected_repository": "getsentry/sentry",
+      "expected_product_area": "Product Area: Explore"
+    },
+    {
+      "name": "Insufficient information",
+      "url": "https://github.com/getsentry/sentry/issues/126406",
+      "expected_decision": "NEEDS_MORE_INFORMATION",
+      "expected_repository": null,
+      "expected_product_area": null
+    },
+    {
+      "name": "Previously disputed ownership",
+      "url": "https://github.com/getsentry/sentry/issues/126018",
+      "expected_decision": "STAY",
+      "expected_repository": "getsentry/sentry",
+      "expected_product_area": "ANY_VALID"
+    }
+  ],
+  "fresh": [
+    {
+      "name": "GitHub App integration IP addresses",
+      "url": "https://github.com/getsentry/sentry/issues/127215",
+      "expected_decision": "STAY",
+      "expected_repository": "getsentry/sentry",
+      "expected_product_area": "Product Area: Settings - Integrations"
+    },
+    {
+      "name": "Replay access members API",
+      "url": "https://github.com/getsentry/sentry/issues/127208",
+      "expected_decision": "STAY",
+      "expected_repository": "getsentry/sentry",
+      "expected_product_area": "Product Area: Replays"
+    },
+    {
+      "name": "Application metrics count_unique",
+      "url": "https://github.com/getsentry/sentry/issues/127206",
+      "expected_decision": "STAY",
+      "expected_repository": "getsentry/sentry",
+      "expected_product_area": "Product Area: Explore"
+    },
+    {
+      "name": "Project-level Replay access",
+      "url": "https://github.com/getsentry/sentry/issues/127204",
+      "expected_decision": "STAY",
+      "expected_repository": "getsentry/sentry",
+      "expected_product_area": "Product Area: Replays"
+    }
+  ]
+}

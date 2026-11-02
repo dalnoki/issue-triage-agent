@@ -1,0 +1,4 @@
+name,issue_url,expected_decision,actual_decision,expected_product_area,actual_product_area,suggested_repository,passed,status,error
+Logs Explore UI bug,https://github.com/getsentry/sentry/issues/126412,STAY,STAY,Product Area: Explore,Product Area: Explore,getsentry/sentry,True,PASS,
+Insufficient information,https://github.com/getsentry/sentry/issues/126406,NEEDS_MORE_INFORMATION,NEEDS_MORE_INFORMATION,,,,True,PASS,
+Disputed repository ownership,https://github.com/getsentry/sentry/issues/126018,REVIEW,REVIEW,,,getsentry/sentry,True,PASS,

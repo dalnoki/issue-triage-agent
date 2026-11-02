@@ -1,0 +1,252 @@
+{
+  "frozen_at": "2026-10-15T12:17:10.484181+00:00",
+  "source_cases_file": "holdout_cases.json",
+  "duplicate_similarity_threshold": 0.95,
+  "snapshots": [
+    {
+      "case_id": "H1",
+      "notes": "Build-time .NET SDK analyzer failure. Only sentry-dotnet example in the routing dataset, so holding it out leaves zero dotnet examples.",
+      "title": "Support `Sentry.SourceGenerators` via Visual Studio 2019 version 16.11",
+      "body": "### Environment\n\nSaaS (https://sentry.io/)\n\n### Steps to Reproduce\n\nWhen building UWP project using Azure DevOps Pipelines we got this error:\n\nError CS8032: An instance of analyzer Sentry.SourceGenerators.BuildPropertySourceGenerator cannot be created from C:\\Users\\svcprd_tfbuild\\.nuget\\packages\\sentry\\5.15.1\\analyzers\\dotnet\\cs\\Sentry.SourceGenerators.dll : Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. The system cannot find the file specified..\n\nMicrosoft.CodeAnalysis Version=4.3.0.0 is not available in Nuget repository.\n\nSentry Version=5.15.1\n\nEDIT:\nTreatWarningAsErrors is set to true, so this error is acutally a warning:\nCSC : warning CS8032: An instance of analyzer Sentry.SourceGenerators.BuildPropertySourceGenerator cannot be created from C:\\Users\\svcprd_tfbuild\\.nuget\\packages\\sentry\\5.14.1\\analyzers\\dotnet\\cs\\Sentry.SourceGenerators.dll : Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. The system cannot find the file specified..\n\n### Expected Result\n\nBuild should finish without problems.\n\n### Actual Result\n\nBuild fails with error described above\n\n### Product Area\n\nUnknown\n\n### Link\n\n_No response_\n\n### DSN\n\n_No response_\n\n### Version\n\n_No response_",
+      "historical_action": {
+        "decision": "TRANSFER",
+        "source_repository": "getsentry/sentry",
+        "destination_repository": "getsentry/sentry-dotnet",
+        "destination_url": "https://github.com/getsentry/sentry-dotnet/issues/4554",
+        "transferred_at": "2025-09-23T12:12:48Z",
+        "transfer_path": [
+          {
+            "date": "2025-09-23T12:12:48Z",
+            "from_repository": "getsentry/sentry"
+          }
+        ]
+      },
+      "excluded_routing_urls": [
+        "https://github.com/getsentry/sentry-dotnet/issues/4554"
+      ],
+      "snapshot_checks": {
+        "created_at": "2025-09-23T09:51:33Z",
+        "last_edited_at": "2025-09-23T10:36:33Z",
+        "body_edited_after_transfer": false,
+        "in_routing_dataset": true,
+        "nearest_routing_examples": [
+          {
+            "issue_url": "https://github.com/getsentry/self-hosted/issues/3504",
+            "title": "Missing support for source maps with micro frontends",
+            "similarity": 0.58
+          },
+          {
+            "issue_url": "https://github.com/getsentry/self-hosted/issues/4405",
+            "title": "AADSTS900144: The request body must contain the following parameter: 'client_id'.",
+            "similarity": 0.57
+          },
+          {
+            "issue_url": "https://github.com/getsentry/sentry/issues/76810",
+            "title": "Stack frame doesn't have Debug IDs",
+            "similarity": 0.565
+          }
+        ],
+        "duplicate_routing_examples": [],
+        "product_area_title_matches": [],
+        "problems": [],
+        "usable": true
+      }
+    },
+    {
+      "case_id": "H2",
+      "notes": "Self-hosted Snuba/ClickHouse timestamp error. Reporter-selected Product Area was Issues.",
+      "title": "Snuba seems to set timestamp_ms to a max value",
+      "body": "### Environment\n\nself-hosted (https://develop.sentry.dev/self-hosted/)\n\n### Steps to Reproduce\n\n1. Deploy Sentry with Snuba on ClickHouse 26.x+\n2. Send events from any SDK/application\n3. Wait for some events to have `timestamp_ms = '9999-12-31 23:59:59'`\n4. Try to view the event in Sentry UI\n5. Observe HTTP 500 error: `SnubaError: year 58728 is out of range`\n\n### Expected Result\n\nDisplay the even and all the timeline\n\n### Actual Result\n\nError 500 with `SnubaError: year 58728 is out of range` in logs\n\n### Product Area\n\nIssues\n\n### Link\n\n_No response_\n\n### DSN\n\n_No response_\n\n### Version\n\n31.3.0",
+      "historical_action": {
+        "decision": "TRANSFER",
+        "source_repository": "getsentry/sentry",
+        "destination_repository": "getsentry/self-hosted",
+        "destination_url": "https://github.com/getsentry/self-hosted/issues/4557",
+        "transferred_at": "2026-10-12T10:06:43Z",
+        "transfer_path": [
+          {
+            "date": "2026-10-12T10:06:43Z",
+            "from_repository": "getsentry/sentry"
+          }
+        ]
+      },
+      "excluded_routing_urls": [
+        "https://github.com/getsentry/self-hosted/issues/4557"
+      ],
+      "snapshot_checks": {
+        "created_at": "2026-10-12T10:04:11Z",
+        "last_edited_at": null,
+        "body_edited_after_transfer": false,
+        "in_routing_dataset": true,
+        "nearest_routing_examples": [
+          {
+            "issue_url": "https://github.com/getsentry/self-hosted/issues/4080",
+            "title": "690MB documentation webpage in every snuba container",
+            "similarity": 0.585
+          },
+          {
+            "issue_url": "https://github.com/getsentry/sentry/issues/126009",
+            "title": "Slack error message \"We had some trouble connecting. Try Again?\" when resolving/archiving issues.",
+            "similarity": 0.57
+          },
+          {
+            "issue_url": "https://github.com/getsentry/sentry/issues/64000",
+            "title": "Switching a new cron's checkins to the new endpoint caused an existing cron's checkins to be missed",
+            "similarity": 0.568
+          }
+        ],
+        "duplicate_routing_examples": [],
+        "product_area_title_matches": [],
+        "problems": [],
+        "usable": true
+      }
+    },
+    {
+      "case_id": "H3",
+      "notes": "Self-hosted user, but the root cause cited is in src/sentry (ProjectKey relocation import). A STAY prediction is defensible; a mismatch here is not necessarily an agent error.",
+      "title": "sentry import global silently drops all but one ProjectKey per project",
+      "body": "## Environment\n\nSentry self-hosted **26.7.2**. Import target: a freshly `sentry upgrade`d, otherwise empty database (Postgres 14.23 + Redis).\n\n## What happens\n\n`sentry import global <export.json>` exits 0, logs `import_by_model.successfully_imported` for `sentry.projectkey`, writes **zero** entries to `--findings-file`, and emits no warning, conflict or duplicate — but only **one ProjectKey per project** lands in the database.\n\nAn export containing 18 project keys across 10 projects (8 of those projects had 2 keys each) restored as 10 keys, one per project. The surviving row holds whichever key appeared **last** in the export file.\n\n## Cause\n\n`src/sentry/models/projectkey.py` — `ProjectKey.write_relocation_import`:\n\n```python\n(key, _) = ProjectKey.objects.get_or_create(\n    project=self.project, defaults=model_to_dict(self)\n)\nif key:\n    self.pk = key.pk\n    self.save()\n```\n\n`get_or_create` is keyed on `project` alone:\n\n- the **first** key for a project finds the row auto-created by the `post_save` hook and overwrites it;\n- the **second** key for the same project finds that same row and overwrites it again.\n\nNothing is ever inserted, so a project cannot hold more than one key after an import. The `_f: ImportFlags` parameter is unused, so no CLI flag alters this.\n\n## Reproduction\n\n1. Create an organization with one project, then add a second client key (Settings → Client Keys → Generate New Key).\n2. `sentry export global /tmp/export.json` — confirm both keys are present in the JSON.\n3. Against an empty, freshly `sentry upgrade`d database: `sentry import global /tmp/export.json --no-prompt`\n4. `SELECT count(*) FROM sentry_projectkey WHERE project_id = <id>;` → **1**, expected 2.\n\n## Impact\n\nDSNs are silently lost on restore. In the common layout where each project carries a production key and a staging key, exactly one survives per project — so after a disaster restore roughly half the SDK configurations stop reporting, and the half that still works is the half anyone is watching. The command reports success throughout, so nothing signals the loss.\n\n## Related, same method\n\n```python\nmatching_public_key = self.__class__.objects.filter(public_key=self.public_key).first()\nif not self.public_key or matching_public_key:\n    self.public_key = self.generate_api_key()\n```\n\nImporting into a database that **already** holds these keys regenerates the public key — silently minting new DSNs instead of restoring the originals. That may well be intended for relocation between installations, but it is surprising for a same-installation restore and I could not find it called out in the backup/restore docs.\n\n## Suggested fix\n\nKey the lookup on the ProjectKey rather than on the project — e.g. `get_or_create(public_key=..., defaults=...)` — so that multiple keys per project round-trip correctly.\n",
+      "historical_action": {
+        "decision": "TRANSFER",
+        "source_repository": "getsentry/sentry",
+        "destination_repository": "getsentry/self-hosted",
+        "destination_url": "https://github.com/getsentry/self-hosted/issues/4502",
+        "transferred_at": "2026-09-11T07:44:28Z",
+        "transfer_path": [
+          {
+            "date": "2026-09-11T07:44:28Z",
+            "from_repository": "getsentry/sentry"
+          }
+        ]
+      },
+      "excluded_routing_urls": [
+        "https://github.com/getsentry/self-hosted/issues/4502"
+      ],
+      "snapshot_checks": {
+        "created_at": "2026-09-10T14:07:01Z",
+        "last_edited_at": null,
+        "body_edited_after_transfer": false,
+        "in_routing_dataset": true,
+        "nearest_routing_examples": [
+          {
+            "issue_url": "https://github.com/getsentry/self-hosted/issues/3977",
+            "title": "No errors ingested while projects are being deleted",
+            "similarity": 0.579
+          },
+          {
+            "issue_url": "https://github.com/getsentry/self-hosted/issues/4518",
+            "title": "send-beacon crashes in get_all_package_versions: dictionary changed size during iteration",
+            "similarity": 0.564
+          },
+          {
+            "issue_url": "https://github.com/getsentry/sentry/issues/83702",
+            "title": "Relocation self-hosted to saas Failed",
+            "similarity": 0.533
+          }
+        ],
+        "duplicate_routing_examples": [],
+        "product_area_title_matches": [],
+        "problems": [],
+        "usable": true
+      }
+    },
+    {
+      "case_id": "H4",
+      "notes": "Self-hosted GitHub integration 404 with almost no detail (screenshot only). Reporter-selected Product Area was Settings - Repositories.",
+      "title": "404 when adding a new GH repository",
+      "body": "### Environment\n\nself-hosted (https://develop.sentry.dev/self-hosted/)\n\n### Steps to Reproduce\n\nWhen trying to add a new GitHub Repository the following exception appears:\n\n<img width=\"661\" height=\"547\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/fc511c68-7060-4b86-9327-d134045fcad9\" />\n\n### Expected Result\n\nBe able to add a repository\n\n### Actual Result\n\nNot able to add a repository\n\n### Product Area\n\nSettings - Repositories\n\n### Link\n\n_No response_\n\n### DSN\n\n_No response_\n\n### Version\n\n_No response_",
+      "historical_action": {
+        "decision": "TRANSFER",
+        "source_repository": "getsentry/sentry",
+        "destination_repository": "getsentry/self-hosted",
+        "destination_url": "https://github.com/getsentry/self-hosted/issues/4404",
+        "transferred_at": "2026-07-09T04:33:21Z",
+        "transfer_path": [
+          {
+            "date": "2026-07-09T04:33:21Z",
+            "from_repository": "getsentry/sentry"
+          }
+        ]
+      },
+      "excluded_routing_urls": [
+        "https://github.com/getsentry/self-hosted/issues/4404"
+      ],
+      "snapshot_checks": {
+        "created_at": "2026-07-06T14:16:55Z",
+        "last_edited_at": null,
+        "body_edited_after_transfer": false,
+        "in_routing_dataset": true,
+        "nearest_routing_examples": [
+          {
+            "issue_url": "https://github.com/getsentry/self-hosted/issues/4405",
+            "title": "AADSTS900144: The request body must contain the following parameter: 'client_id'.",
+            "similarity": 0.753
+          },
+          {
+            "issue_url": "https://github.com/getsentry/sentry/issues/80171",
+            "title": "Since a few weeks ago, pressing \"AI Solution\" says \"There was an error loading data.\"",
+            "similarity": 0.631
+          },
+          {
+            "issue_url": "https://github.com/getsentry/self-hosted/issues/3819",
+            "title": "I tried to build a Docker image, but I encountered an error.",
+            "similarity": 0.605
+          }
+        ],
+        "duplicate_routing_examples": [],
+        "product_area_title_matches": [],
+        "problems": [],
+        "usable": true
+      }
+    },
+    {
+      "case_id": "H5",
+      "notes": "Helm-chart deployment, but the analysis points to taskworker code in src/sentry. Ambiguous ownership.",
+      "title": "Taskworker KAFKA_TOPIC_OVERRIDES Ignored",
+      "body": "### Environment\n\nself-hosted (https://develop.sentry.dev/self-hosted/)\n\n### Steps to Reproduce\n\nHey, I'm running the Sentry helm chart 31.7.1 which deploys Sentry 26.5.0, using externalKafka and kafkaTopicOverrides.prefix configurations, as my org enforces topic naming conventions. My sentry-web pod appears to be ignoring the KAFKA_TOPIC_OVERRIDES for taskworker* topics, and it's raising TOPIC_AUTHORIZATION_FAILED errors as we have strict ACLs in place.\n\nThe sentry helm chart has this logic in `_helper-sentry.tpl` file:\n```yaml\n  {{- if ((.Values.kafkaTopicOverrides).prefix) }}\n  SENTRY_CHARTS_KAFKA_TOPIC_PREFIX = {{ .Values.kafkaTopicOverrides.prefix | quote }}\n\n  from sentry.conf.types.kafka_definition import Topic\n  for topic in Topic:\n    KAFKA_TOPIC_OVERRIDES[topic.value] = f\"{SENTRY_CHARTS_KAFKA_TOPIC_PREFIX}{topic.value}\"\n  {{- end }}\n```\n\ntaskbroker* topics are indeed defined in the sentry.conf.types.kafka_definition.Topic Enum\nhttps://github.com/getsentry/sentry/blob/26.5.0/src/sentry/conf/types/kafka_definition.py#L12-L113 \n\nTake this with a grain of skepticism, but my initial analysis points to [adapters.py:make_producer](https://github.com/getsentry/sentry/blob/26.5.0/src/sentry/taskworker/adapters.py#L223-L241), which calls [arroyo_producer.py:get_arroyo_producer](https://github.com/getsentry/sentry/blob/26.5.0/src/sentry/utils/arroyo_producer.py#L79-L116), but this chain of logic never consults `get_topic_definition(topic)[\"real_topic_name\"]` as other Kafka producers do, for example:\n```\nArroyoTopic(get_topic_definition(Topic.INGEST_OCCURRENCES)[\"real_topic_name\"])\n```\n\nTo reproduce:\n\n1. Configure KAFKA_TOPIC_OVERRIDES with a prefix for each topic, as shown in the `_helper-sentry.tpl` file\n2. Use a Kafka user with a PREFIX ACL on topics, using the prefix configured.\n3. Perform the initial \"Set up the Sentry SDK\" for a python project and send a test envelope to Sentry.\n4. Observe the Verify section in the initial project setup: it hangs on \"Waiting for this project's first error\"\n5. Observe TOPIC_AUTHORIZATION_FAILED errors in the logs\n\n### Expected Result\n\nSuccessful ingestion and processing of Sentry envelopes.\n\n### Actual Result\n\n\nSentry-web stack trace:\n```\nTraceback (most recent call last):\nFile \"/usr/src/sentry/src/sentry/api/base.py\", line 320, in handle_exception_with_details\nresponse = self.handle_exception(exc)\nFile \"/.venv/lib/python3.13/site-packages/rest_framework/views.py\", line 475, in handle_exception\nself.raise_uncaught_exception(exc)\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^\nFile \"/.venv/lib/python3.13/site-packages/rest_framework/views.py\", line 486, in raise_uncaught_exception\nraise exc\nFile \"/usr/src/sentry/src/sentry/api/base.py\", line 434, in dispatch\nresponse = handler(request, *args, **kwargs)\nFile \"/usr/src/sentry/src/sentry/api/endpoints/relay/project_configs.py\", line 60, in post\nresponse.update(self._post_or_schedule_by_key(request))\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^\nFile \"/usr/src/sentry/src/sentry/api/endpoints/relay/project_configs.py\", line 118, in _post_or_schedule_by_key\ncomputed = self._get_cached_or_schedule(key)\nFile \"/usr/src/sentry/src/sentry/api/endpoints/relay/project_configs.py\", line 143, in _get_cached_or_schedule\nschedule_build_project_config(public_key=public_key)\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\nFile \"/usr/src/sentry/src/sentry/tasks/relay.py\", line 95, in schedule_build_project_config\nbuild_project_config.delay(public_key=public_key, tmp_scheduled=tmp_scheduled)\n~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFile \"/.venv/lib/python3.13/site-packages/taskbroker_client/task.py\", line 166, in delay\nself.apply_async(args=args, kwargs=kwargs)\n~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\nFile \"/.venv/lib/python3.13/site-packages/taskbroker_client/task.py\", line 198, in apply_async\nself._namespace.send_task(\n~~~~~~~~~~~~~~~~~~~~~~~~~^\nactivation,\n^^^^^^^^^^^\nwait_for_delivery=self.wait_for_delivery,\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n)\n^\nFile \"/.venv/lib/python3.13/site-packages/taskbroker_client/registry.py\", line 178, in send_task\nproduce_future = self._producer(topic).produce(\nTopic(name=topic),\nKafkaPayload(key=None, value=activation.SerializeToString(), headers=[]),\n)\nFile \"/usr/src/sentry/src/sentry/utils/arroyo_producer.py\", line 38, in produce\nfuture = self._get().produce(destination, payload)\nFile \"/.venv/lib/python3.13/site-packages/arroyo/backends/kafka/consumer.py\", line 838, in produce\nproduce(\n~~~~~~~^\nvalue=payload.value,\n^^^^^^^^^^^^^^^^^^^^\n...<2 lines>...\non_delivery=partial(self.__delivery_callback, future, payload),\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n)\n^\ncimpl.KafkaException: KafkaError{code=TOPIC_AUTHORIZATION_FAILED,val=29,str=\"Unable to produce message: Broker: Topic authorization failed\"}\n12:53:43 [ERROR] django.request: Internal Server Error: /api/0/relays/projectconfigs/ (status_code=500 request=<WSGIRequest: POST '/api/0/relays/projectconfigs/?version=3'>)\n```\n\nKafka broker deny errors:\n```\nPrincipal = User:my_kafka_user is Denied operation = DESCRIBE from host = xxxxxxxx on resource = Topic:LITERAL:taskworker for request = Metadata with resourceRefCount = 1 based on rule DefaultDeny\n```\n\nHere's a Kibana visualisation of affected topics using broker topic DENY logs against our Kafka user used by Sentry, since we're running a fresh instance of Sentry, there's probably more impact than listed here:\n<img width=\"414\" height=\"412\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/053628b6-ce5f-4a3d-83bb-d1ece74ebd66\" />\n\n### Product Area\n\nIngestion and Filtering\n\n### Link\n\n_No response_\n\n### DSN\n\n_No response_\n\n### Version\n\n26.5.0",
+      "historical_action": {
+        "decision": "TRANSFER",
+        "source_repository": "getsentry/sentry",
+        "destination_repository": "getsentry/self-hosted",
+        "destination_url": "https://github.com/getsentry/self-hosted/issues/4392",
+        "transferred_at": "2026-07-01T06:28:44Z",
+        "transfer_path": [
+          {
+            "date": "2026-07-01T06:28:44Z",
+            "from_repository": "getsentry/sentry"
+          }
+        ]
+      },
+      "excluded_routing_urls": [
+        "https://github.com/getsentry/self-hosted/issues/4392"
+      ],
+      "snapshot_checks": {
+        "created_at": "2026-06-30T13:23:36Z",
+        "last_edited_at": null,
+        "body_edited_after_transfer": false,
+        "in_routing_dataset": true,
+        "nearest_routing_examples": [
+          {
+            "issue_url": "https://github.com/getsentry/self-hosted/issues/4013",
+            "title": "arroyo.errors.OffsetOutOfRange: KafkaError{code=_AUTO_OFFSET_RESET,val=-140,str=\"fetch failed due to requested offset not available on the broker: Broker: Offset out of range (broker 1001)\"}",
+            "similarity": 0.646
+          },
+          {
+            "issue_url": "https://github.com/getsentry/self-hosted/issues/4317",
+            "title": "Failed to produce message to Kafka",
+            "similarity": 0.626
+          },
+          {
+            "issue_url": "https://github.com/getsentry/self-hosted/issues/4241",
+            "title": "taskworker / taskworker-scheduler do not respect signals",
+            "similarity": 0.604
+          }
+        ],
+        "duplicate_routing_examples": [],
+        "product_area_title_matches": [],
+        "problems": [],
+        "usable": true
+      }
+    }
+  ]
+}
